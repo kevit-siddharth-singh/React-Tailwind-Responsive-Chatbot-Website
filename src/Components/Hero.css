@@ -1,20 +1,46 @@
-.floating{
-    animation: float 6s ease-in-out infinite;
-    transition: 1s ease-out;
-    filter: drop-shadow(0px 0px 30px black);
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.title-section {
+  font-family: "Outfit";
+}
+
+.hero-data {
+    width: 45%;
+    display: flex;
+    gap: 2rem;
+
+}
+.floating {
+  width: 25rem;
+  height: 100%;
+  animation: float 6s ease-in-out infinite;
+  transition: 1s ease-out;
+  filter: drop-shadow(0px 0px 30px black);
+}
+ .img-2{
+    width: 27rem;
+}
+
+.hero-btn{
+font-size: 1.3rem;
+font-weight: 600;
+padding: 0.9rem;
+
+}
+
+.main-bg{
+    width: 64%;
+
 }
 
 @keyframes float {
-    0% {
-        
-        transform: translateY(0px);
-    }
-    50% {
-        
-        transform: translateY(-25px);
-    }
-    100% {
-        
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
