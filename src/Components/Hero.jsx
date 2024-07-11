@@ -10,7 +10,7 @@ function Hero() {
         <div className="hero-container  flex  justify-between">
           <img className="floating img-1" src={abs_donut} alt="" />
           <div className="hero-data  flex-col items-center text-center ">
-            <div className="hero-title text-[4.5rem] font-[700] leading-[5.2rem]">
+            <div className="bg-gradient-to-r from-[#ffb300] via-green-500 to-[#c402ff] text-transparent bg-clip-text  hero-title text-[4.5rem] font-[700] leading-[5.2rem]">
               Build advanced chatbots visually
             </div>
             <div className="hero-subtitle text-[1.4rem]">
