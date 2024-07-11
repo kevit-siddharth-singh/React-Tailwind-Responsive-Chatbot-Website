@@ -5,7 +5,7 @@ import mainBg from "../assets/hero-img.webp";
 import "./Hero.css";
 function Hero() {
   return (
-    <div className="hero-wrapper">
+    <div className="hero-wrapper ">
       <div className="title-section mt-[6.2rem]">
         <div className="hero-container  flex  justify-between">
           <img className="floating img-1" src={abs_donut} alt="" />

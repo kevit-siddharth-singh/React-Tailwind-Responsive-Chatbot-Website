@@ -2,8 +2,8 @@ import logo from "../assets/bot.png";
 
 function Navbar() {
   return (
-    <nav className="navbar w-100 flex justify-around px-20 py-5">
-      <div className="logo w-[6rem] ">
+    <nav className="navbar w-100 flex justify-around px-20">
+      <div className="logo w-[8.5rem] ">
         <img src={logo} alt="logo of the company" />
       </div>
       <div className="links  w-1/3 flex justify-between items-center px-10 text-white font-[700]">
