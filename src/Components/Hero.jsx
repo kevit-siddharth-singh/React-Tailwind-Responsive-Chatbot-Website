@@ -6,7 +6,7 @@ import "./Hero.css";
 function Hero() {
   return (
     <div className="hero-wrapper ">
-      <div className="title-section mt-[6.2rem]">
+      <div className="title-section mt-[2.2rem]">
         <div className="hero-container  flex  justify-between">
           <img className="floating img-1" src={abs_donut} alt="" />
           <div className="hero-data  flex-col items-center text-center ">
@@ -18,7 +18,7 @@ function Hero() {
               experiences. Embed them anywhere on your web/mobile apps and start
               collecting results like magic.
             </div>
-            <button className="hero-btn rounded-[0.375rem] px-[1.1rem] bg-[#1A5FFF] ">
+            <button className="glow-on-hover  hero-btn rounded-[0.375rem] px-[1.1rem] bg-[#1A5FFF] ">
               Create a Skybot for free
             </button>
           </div>
