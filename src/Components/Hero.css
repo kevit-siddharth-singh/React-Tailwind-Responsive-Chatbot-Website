@@ -84,13 +84,13 @@
 
 .img-1 {
   translate: 90px 50px;
-  filter: drop-shadow(0px 0px 90px rgba(98, 0, 255, 0.9));
+  filter: drop-shadow(0px 0px 90px #6200ffe6);
 }
 
 .img-2 {
   translate: 0px 60px;
   width: 27rem;
-  filter: drop-shadow(0px 0px 90px rgb(238, 0, 255));
+  filter: drop-shadow(0px 0px 90px #ee00ff);
   transform: rotate(0deg);
   transition: 1s ease-in;
 }
@@ -100,7 +100,7 @@
 }
 .img-1:hover {
   animation: donut-rotate 6s linear infinite both;
-  filter: drop-shadow(0px 0px 90px rgb(34, 255, 0));
+  filter: drop-shadow(0px 0px 90px #22ff00);
 }
 @keyframes donut-rotate {
   0% {

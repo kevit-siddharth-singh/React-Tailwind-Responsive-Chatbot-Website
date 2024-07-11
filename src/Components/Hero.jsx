@@ -32,7 +32,7 @@ function Hero() {
         </div>
 
         <div className="blobs bottom-0 absolute flex z-[-1] w-full justify-around">
-          <div className="blob blob-1"></div>
+          <div className="blob blob-1 mt"></div>
           <div className="blob blob-2"></div>
         </div>
       </div>
