@@ -5,32 +5,49 @@
 }
 
 .hero-data {
-    width: 45%;
-    display: flex;
-    gap: 2rem;
-
+  width: 45%;
+  display: flex;
+  gap: 2rem;
 }
 .floating {
+  cursor: pointer;
   width: 25rem;
   height: 100%;
   animation: float 6s ease-in-out infinite;
   transition: 1s ease-out;
-  filter: drop-shadow(0px 0px 30px black);
-}
- .img-2{
-    width: 27rem;
 }
 
-.hero-btn{
-font-size: 1.3rem;
-font-weight: 600;
-padding: 0.9rem;
-
+.img-1 {
+  translate: 90px 50px;
+  filter: drop-shadow(0px 0px 90px rgba(98, 0, 255, 0.9));
+}
+.img-2 {
+  translate: 10px 0px;
+  width: 27rem;
+  filter: drop-shadow(0px 0px 90px rgb(238, 0, 255));
 }
 
-.main-bg{
-    width: 64%;
+@keyframes donut-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
 
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-btn {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.9rem;
+}
+
+.main-bg {
+  width: 64%;
 }
 
 @keyframes float {
@@ -38,9 +55,52 @@ padding: 0.9rem;
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-25px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0px);
   }
 }
+
+/* Sid:  Blobs Css Starts Here */
+.blob {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  /* background: red; */
+  filter: blur(50px);
+}
+
+.blob-1 {
+  background: #e67200;
+  -webkit-box-shadow: 0px 0px 300px 27px rgba(230, 115, 0, 1);
+  -moz-box-shadow: 0px 0px 300px 27px rgba(230, 115, 0, 1);
+  box-shadow: 0px 0px 300px 27px rgba(230, 115, 0, 1);
+
+  animation: floatblob 2.2s ease-in-out infinite;
+  transition: 1.2s ease-out;
+}
+.blob-2 {
+  background: #0042da;
+  -webkit-box-shadow: 0px 0px 300px 27px #0042da;
+  -moz-box-shadow: 0px 0px 300px 27px #0042da;
+  box-shadow: 0px 0px 300px 27px #0042da;
+  transform: scale(0.85);
+  animation: floatblob 2.2s ease-in-out infinite;
+  transition: 1.2s ease-in-out;
+}
+
+@keyframes floatblob {
+  0% {
+    transform: translateY(0px) scale(0.75);
+  }
+  50% {
+    transform: translateY(-120px) scale(1.1);
+  }
+
+  100% {
+    transform: translateY(0px) scale(0.75);
+  }
+}
+
+/* Sid:  Blobs Css Ends Here */

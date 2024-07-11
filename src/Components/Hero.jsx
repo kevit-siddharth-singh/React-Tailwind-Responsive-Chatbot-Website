@@ -14,11 +14,11 @@ function Hero() {
               Build advanced chatbots visually
             </div>
             <div className="hero-subtitle text-[1.4rem]">
-              Typebot gives you powerful blocks to create unique chat
+              SkyBot gives you powerful blocks to create unique chat
               experiences. Embed them anywhere on your web/mobile apps and start
               collecting results like magic.
             </div>
-            <button className="hero-btn rounded-[0.375rem] px-[1.1rem] bg-[#1A5FFF]">
+            <button className="hero-btn rounded-[0.375rem] px-[1.1rem] bg-[#1A5FFF] ">
               Create a Skybot for free
             </button>
           </div>
@@ -26,13 +26,16 @@ function Hero() {
         </div>
       </div>
 
-      <div className="main-wrapper mt-20 flex justify-center ">
-          <div className="main-bg ">
-            <img className="rounded-[0.375rem]" src={mainBg} alt="" />
-          </div>
+      <div className="main-wrapper mt-20 flex justify-center relative z-10">
+        <div className="main-bg">
+          <img className="rounded-[0.375rem]" src={mainBg} alt="" />
+        </div>
 
+        <div className="blobs bottom-0 absolute flex z-[-1] w-full justify-around">
+          <div className="blob blob-1"></div>
+          <div className="blob blob-2"></div>
+        </div>
       </div>
-
     </div>
   );
 }
