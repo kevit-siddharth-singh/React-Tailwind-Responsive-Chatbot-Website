@@ -1,6 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 /*Note: Navbar Jsx Css Starts Here */
+.links a {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+  padding: 5px 0px;
+  position: relative;
+}
+.links a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  position: absolute;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.links a:hover{
+  transform: scale(1.1);
+}
+.links a:hover:after {
+  width: 100%;
+
+  left: 0;
+}
+/* Sid: Sign Up Button Css starts Here */
+.sign-in-btn {
+  transition: 0.3s ease-in-out;
+}
+.sign-in-btn:hover {
+  color: white;
+  background: black;
+  border: none;
+  box-shadow: 0px 0px 150px 28px rgb(255, 255, 255);
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* Sid: Sign Up Button Css Ends Here */
 
 .logo-img {
   transition: 0.5s ease-in-out;
@@ -9,7 +61,7 @@
 .logo-img:hover {
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
- filter: drop-shadow(0px 0px 40px  rgb(0, 0, 0));
+  filter: drop-shadow(0px 0px 40px rgb(0, 0, 0));
 }
 /*Note: Navbar Jsx Css Ends Here */
 
@@ -34,6 +86,7 @@
   translate: 90px 50px;
   filter: drop-shadow(0px 0px 90px rgba(98, 0, 255, 0.9));
 }
+
 .img-2 {
   translate: 0px 60px;
   width: 27rem;
@@ -44,6 +97,10 @@
 .img-2:hover {
   animation: donut-rotate 6s linear infinite both;
   filter: drop-shadow(0px 0px 90px rgb(255, 215, 0));
+}
+.img-1:hover {
+  animation: donut-rotate 6s linear infinite both;
+  filter: drop-shadow(0px 0px 90px rgb(34, 255, 0));
 }
 @keyframes donut-rotate {
   0% {
@@ -174,3 +231,17 @@
 /* Note: Button Glow Effect Css Ends Here */
 
 /* Sid:  Blobs Css Ends Here */
+
+/* Note:  Hero Main Bg Css starts here  */
+.main-bg:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.03);
+  -webkit-box-shadow: 0px 0px 89px 8px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 89px 8px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 89px 8px rgba(0, 0, 0, 1);
+}
+.main-bg {
+  transition: 0.5s ease-in-out;
+}
+
+/* Note:  Hero Main Bg Css Ends here  */
