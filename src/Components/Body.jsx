@@ -81,26 +81,26 @@ function Body() {
               <p>What services are you interested in?</p>
 
               <div className="checkboxes">
-              <div className="label">
-                <input type="checkbox" id="Website Dev" />
-                <label htmlFor="Website Dev">Website Dev</label>
-              </div>
-              <div className="label">
-                <input type="checkbox" id="Website Dev" />
-                <label htmlFor="Website Dev">Website Dev</label>
-              </div>
-              <div className="label">
-                <input type="checkbox" id="Website Dev" />
-                <label htmlFor="Website Dev">Website Dev</label>
-              </div>
-              <div className="label">
-                <input type="checkbox" id="Website Dev" />
-                <label htmlFor="Website Dev">Website Dev</label>
-              </div>
-              </div>
+                <div className="label">
+                  <input type="checkbox" id="Website Dev" />
 
-
-
+                  <label htmlFor="Website Dev">Website Dev</label>
+                </div>
+                <div className="label">
+                  <input type="checkbox" id="Application Dev" />
+                  <label htmlFor="Application Dev">Application Dev</label>
+                </div>
+                <div className="label">
+                  <input type="checkbox" id="Content Marketing" />
+                  <label htmlFor="Content Marketing">Content Marketing</label>
+                </div>
+                <div className="label">
+                  <input type="checkbox" id="ui-ux" />
+                  <label htmlFor="ui-ux">UX/UI</label>
+                </div>
+              </div>
+              <p>Additional Information</p>
+              <textarea name="add-info" id="add-info" placeholder="Tell us more about you."></textarea>
             </div>
           </div>
           <div className="form">
