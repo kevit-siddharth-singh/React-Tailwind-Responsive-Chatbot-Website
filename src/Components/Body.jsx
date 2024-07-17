@@ -64,7 +64,43 @@ function Body() {
             </svg>
             <div className="form1">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" placeholder="Enter Your Name" />
+              <input
+                className="text-input "
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+              />
+              <label htmlFor="name">Email</label>
+              <input
+                className="text-input"
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+              />
+              {/* Note: CheckBoxes */}
+              <p>What services are you interested in?</p>
+
+              <div className="checkboxes">
+              <div className="label">
+                <input type="checkbox" id="Website Dev" />
+                <label htmlFor="Website Dev">Website Dev</label>
+              </div>
+              <div className="label">
+                <input type="checkbox" id="Website Dev" />
+                <label htmlFor="Website Dev">Website Dev</label>
+              </div>
+              <div className="label">
+                <input type="checkbox" id="Website Dev" />
+                <label htmlFor="Website Dev">Website Dev</label>
+              </div>
+              <div className="label">
+                <input type="checkbox" id="Website Dev" />
+                <label htmlFor="Website Dev">Website Dev</label>
+              </div>
+              </div>
+
+
+
             </div>
           </div>
           <div className="form">

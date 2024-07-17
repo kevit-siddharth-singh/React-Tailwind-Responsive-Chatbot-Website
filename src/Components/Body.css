@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+:root {
+  --round-Border: 0.375rem;
+  
+}
+
+
 .body-wrapper {
   background-color: #0e0f15;
   display: flex;
@@ -40,7 +46,7 @@
   gap: 1em;
 }
 .form-wrapper svg {
-  width: 3.5em;
+  width: 4.2em;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -62,6 +68,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  font-size: 1.1em;
 }
 
 .form1,
@@ -69,11 +76,19 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
-  border-radius: 45px;
-  padding: 1em;
+  border:1px solid #ffffff29;
+  border-radius: var(--round-Border);
+  padding: 1.5em;
+  gap: 1.1em;
+  transition: 0.3s ease-in-out;
+  user-select: none;
 }
+.form1:hover,
+.form2:hover{
+border: 1px solid #ffffff6a;
 
+
+}
 .graffiti {
     display: flex;
     position: absolute;
@@ -87,4 +102,33 @@
 
 }
 
+.text-input{
+  padding: 0.6em;
+  background: transparent;
+  border-radius:var(--round-Border) ;
+  
+}
+.text-input:focus{
+  padding: 0.8em;
+  border: none;
+  outline: 1px solid gray;
+}
+
+.checkboxes{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.label{
+  display: flex;
+  gap: 1em;
+}
+
+
+
+
 /* Sid : Form Css Ends here  */
+
+
+
+/* Todo: 1. Add Rainbow Color Border when hover on form1-2 */
