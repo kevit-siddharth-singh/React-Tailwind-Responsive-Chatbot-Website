@@ -15,7 +15,7 @@ function Body() {
         </p>
 
         <div className="form-wrapper">
-          <div className="graffiti">
+          <div className="graffiti select-none">
             <p>Try it out!</p>
             <svg
               viewBox="0 0 120 124"
