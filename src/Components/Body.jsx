@@ -65,11 +65,11 @@ function Body() {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <div className="form1">
+            <div className="form1 glow-rainbow-container">
               <label htmlFor="name">Name</label>
               <input
                 className="text-input "
-                type="text" 
+                type="text"
                 id="name"
                 placeholder="Enter Your Name"
               />
@@ -119,7 +119,7 @@ function Body() {
               fillOpacity="1"
             >
               <rect width="150" height="150" rx="75"></rect>
-              
+
               <path
                 d="M100 58L65.625 92.375L50 76.75"
                 stroke="white"
@@ -129,14 +129,14 @@ function Body() {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <div className="form2  h-full  ">
+            <div className="form2 glow-rainbow-container h-full  ">
               <div className="msg-container flex-row p-1 h-full ">
                 <div className="msg-right flex gap-5 items-center">
                   <img
                     data-aos="fade-right"
                     data-aos-duration="600"
                     data-aos-delay="200"
-                    className="sid rounded-full"
+                    className="sid rounded-full glow-rainbow"
                     src={sid}
                     alt=""
                   />
@@ -164,7 +164,7 @@ function Body() {
                       data-aos="fade-left"
                       data-aos-duration="500"
                       data-aos-delay="800"
-                      className="sid rounded-full"
+                      className="sid rounded-full glow-rainbow"
                       src={sidbw}
                       alt=""
                     />
@@ -176,17 +176,17 @@ function Body() {
                     data-aos-delay="1000"
                     className="gif flex gap-5"
                   >
-                    <img className="bg-msg" src={legend} alt="" />
+                    <img className="bg-msg " src={legend} alt="" />
                   </div>
                   <div className="msg-user flex gap-5 items-center  ">
-                  <img
+                    <img
                       data-aos="fade-right"
                       data-aos-duration="500"
                       data-aos-delay="1400"
-                      className="sid rounded-full"
+                      className="sid rounded-full glow-rainbow"
                       src={sid}
                       alt=""
-                    />  
+                    />
                     <p
                       className="bg-msg p-[0.5em] text-right"
                       data-aos="fade-right"
@@ -195,7 +195,6 @@ function Body() {
                     >
                       Hell Yeah ! 🔥
                     </p>
-                    
                   </div>
                 </div>
               </div>

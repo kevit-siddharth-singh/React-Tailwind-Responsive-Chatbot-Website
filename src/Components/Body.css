@@ -67,6 +67,7 @@
   align-items: center;
   gap: 1em;
   font-size: 1.1em;
+  cursor: pointer;
 }
 
 .form1,
@@ -85,7 +86,8 @@
 .form2:hover {
   border: 1px solid #ffffff6a;
 }
-.form1 input, textarea{
+.form1 input,
+textarea {
   border: 1px solid grey;
   border-radius: var(--round-Border);
   transition: 0.3s ease-in-out;
@@ -101,6 +103,88 @@
 .graffiti svg {
   width: 3.5em;
 }
+
+/* Sid: Form Border Color Glow Css Starts Here  */
+
+
+
+.glow-rainbow-container:hover {
+  border: 1px solid transparent;
+  animation: rainbow-border-glow 2s infinite;
+}
+
+@keyframes rainbow-border-glow {
+  0% {
+      box-shadow: 0 0 1px 1px #ff0000;
+  }
+  12.5% {
+      box-shadow: 0 0 1px 1px #ff7300;
+  }
+  25% {
+      box-shadow: 0 0 1px 1px #fffb00;
+  }
+  37.5% {
+      box-shadow: 0 0 10px 4px #48ff00;
+  }
+  50% {
+      box-shadow: 0 0 1px 1px #00ffd5;
+  }
+  62.5% {
+      box-shadow: 0 0 1px 1px #002bff;
+  }
+  75% {
+      box-shadow: 0 0 5px 4px #7a00ff;
+  }
+  87.5% {
+      box-shadow: 0 0 10px 5px #ff00c8;
+  }
+  100% {
+      box-shadow: 0 0 1px 1px #ff0000;
+  }
+}
+/* Sid: Form Border Color Glow Css Ends Here  */
+
+
+
+/* !Avatar Img Glow Css Starts From Here */
+.glow-rainbow {
+  transition: 1s ease-in-out;
+}
+
+.glow-rainbow:hover {
+  animation: rainbow-glow 1.2s infinite;
+}
+
+@keyframes rainbow-glow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.8),
+      0 0 60px rgba(255, 0, 0, 0.8), 0 0 80px rgba(255, 0, 0, 0.8),
+      0 0 100px rgba(255, 0, 0, 0.8), 0 0 120px;
+  }
+  16.67% {
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.8), 0 0 40px rgba(255, 165, 0, 0.8),
+      0 0 60px rgba(255, 165, 0, 0.8), 0 0 80px rgba(255, 165, 0, 0.8),
+      0 0 100px rgba(255, 165, 0, 0.8), 0 0 120px;
+  }
+  33.33% {
+    box-shadow: 0 0 20px #00ffd5, 0 0 40px #00ffd5;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 40px rgba(0, 255, 0, 0.8),
+      0 0 60px rgba(0, 255, 0, 0.8), 0 0 80px rgba(0, 255, 0, 0.8),
+      0 0 100px rgba(0, 255, 0, 0.8), 0 0 120px;
+  }
+  66.67% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8), 0 0 40px rgba(0, 0, 255, 0.8),
+      0 0 60px rgba(0, 0, 255, 0.8), 0 0 80px rgba(0, 0, 255, 0.8),
+      0 0 100px rgba(0, 0, 255, 0.8), 0 0 120px;
+  }
+  100% {
+    box-shadow: 0 0 20px #ee00ff, 0 0 40px #ee00ff;
+  }
+}
+
+/* !Avatar Img Glow Css Ends From Here */
 
 .text-input {
   padding: 0.6em;
@@ -127,43 +211,38 @@
   font-size: 0.9em;
   transition: 0.3s ease-in-out;
 }
-.label:hover{
+.label:hover {
   color: #40b76f;
 }
 
-#add-info{
+#add-info {
   background: transparent;
   padding: 0.5em;
 }
 
 /*Note: Form 2 Css Starts Here */
-.sid{
+.sid {
   width: 3em;
   height: 3em;
 }
 
-.bg-msg{
-  background: #1E293B;
+.bg-msg {
+  background: #1e293b;
   padding: 0.5em;
   margin-block: 0.5em;
   border-radius: var(--round-Border);
   width: max-content;
   margin-block: 0.8em;
-
 }
 
 /* ! Glow on Hover Css Starts here */
 
 /* ! Glow on Hover Css Starts here */
 
-
-
 /*Note: Form 2 Css Ends Here */
-
 
 /* Sid : Form Css Ends here  */
 
-/* Todo: 1. Add Rainbow Color Border when hover on form1-2 */
-/* Todo: 2. Load Naruto images from the server */
-
-
+/* Todo: 1. Add Rainbow Color Border when hover on form1-2 --Done     */
+/* Todo: 2. Make it Responsive(Last call) */
+/* Todo: 3. Load Naruto images from the server */
