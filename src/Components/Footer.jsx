@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer-wrapper bg-[#171923] flex justify-center">
       <div className="footer flex gap-[10em] my-[2em] links">
         <div className="section1 flex-row  ">
-          <img className="w-[7em] cursor-pointer" src={logo} alt="" />
+          <img className="w-[7em] cursor-pointer logo-img " src={logo} alt="" />
           <p className="font-bold text">
             Made with {""}
             <span className="cursor-pointer">❤️</span> By {""}
