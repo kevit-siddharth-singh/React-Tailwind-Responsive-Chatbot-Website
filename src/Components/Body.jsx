@@ -69,7 +69,7 @@ function Body() {
               <label htmlFor="name">Name</label>
               <input
                 className="text-input "
-                type="text"
+                type="text" 
                 id="name"
                 placeholder="Enter Your Name"
               />
@@ -112,13 +112,14 @@ function Body() {
           </div>
           <div className="form">
             <svg
-              viewBox="0 0 150 150"
+              viewBox="0 0 150 175"
               focusable="false"
               className="green-tick"
               xmlns="http://www.w3.org/2000/svg"
-              fillOpacity="0.8"
+              fillOpacity="1"
             >
               <rect width="150" height="150" rx="75"></rect>
+              
               <path
                 d="M100 58L65.625 92.375L50 76.75"
                 stroke="white"
@@ -128,7 +129,7 @@ function Body() {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <div className="form2  h-full ">
+            <div className="form2  h-full  ">
               <div className="msg-container flex-row p-1 h-full ">
                 <div className="msg-right flex gap-5 items-center">
                   <img
@@ -152,7 +153,7 @@ function Body() {
                 <div className="reply ">
                   <div className="msg-user flex gap-5 items-center justify-end ">
                     <p
-                      className="bg-msg p-[0.5em] text-right"
+                      className="bg-msg p-[0.5em] text-right "
                       data-aos="fade-left"
                       data-aos-duration="300"
                       data-aos-delay="600"
