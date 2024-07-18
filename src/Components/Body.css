@@ -136,6 +136,28 @@
   padding: 0.5em;
 }
 
+/*Note: Form 2 Css Starts Here */
+.sid{
+  width: 3em;
+  height: 3em;
+}
+
+.bg-msg{
+  background: #1E293B;
+  padding: 1em;
+  margin-block: 0.5em;
+  border-radius: var(--round-Border);
+  width: max-content;
+  margin-block: 0.8em;
+
+}
+
+/*Note: Form 2 Css Ends Here */
+
+
 /* Sid : Form Css Ends here  */
 
 /* Todo: 1. Add Rainbow Color Border when hover on form1-2 */
+/* Todo: 2. Load Naruto images from the server */
+
+

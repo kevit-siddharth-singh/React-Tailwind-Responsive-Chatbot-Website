@@ -1,4 +1,7 @@
 import "./Body.css";
+import sid from "../assets/siddharth.jpeg";
+import legend from "../assets/guy sensei.gif";
+import sidbw from "../assets/siddharth-bw.jpeg";
 
 function Body() {
   return (
@@ -100,7 +103,11 @@ function Body() {
                 </div>
               </div>
               <p>Additional Information</p>
-              <textarea name="add-info" id="add-info" placeholder="Tell us more about you."></textarea>
+              <textarea
+                name="add-info"
+                id="add-info"
+                placeholder="Tell us more about you."
+              ></textarea>
             </div>
           </div>
           <div className="form">
@@ -121,9 +128,76 @@ function Body() {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <div className="form2">
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" placeholder="Enter Your Name" />
+            <div className="form2  h-full ">
+              <div className="msg-container flex-row p-1 h-full ">
+                <div className="msg-right flex gap-5 items-center">
+                  <img
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                    data-aos-delay="200"
+                    className="sid rounded-full"
+                    src={sid}
+                    alt=""
+                  />
+                  <p
+                    className="bg-msg items-end p-[0.5em]"
+                    data-aos="fade-right"
+                    data-aos-duration="300"
+                    data-aos-delay="400"
+                  >
+                    Welcome to <strong>SA</strong> (Sky Agency) Feeling Excited
+                    !
+                  </p>
+                </div>
+                <div className="reply ">
+                  <div className="msg-user flex gap-5 items-center justify-end ">
+                    <p
+                      className="bg-msg p-[0.5em] text-right"
+                      data-aos="fade-left"
+                      data-aos-duration="300"
+                      data-aos-delay="600"
+                    >
+                      Ohh Yeah!
+                    </p>
+                    <img
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                      data-aos-delay="800"
+                      className="sid rounded-full"
+                      src={sidbw}
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    data-aos="fade-left"
+                    data-aos-duration="800"
+                    data-aos-delay="1000"
+                    className="gif flex gap-5"
+                  >
+                    <img className="bg-msg" src={legend} alt="" />
+                  </div>
+                  <div className="msg-user flex gap-5 items-center  ">
+                  <img
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-delay="1400"
+                      className="sid rounded-full"
+                      src={sid}
+                      alt=""
+                    />  
+                    <p
+                      className="bg-msg p-[0.5em] text-right"
+                      data-aos="fade-right"
+                      data-aos-duration="300"
+                      data-aos-delay="1600"
+                    >
+                      Hell Yeah ! 🔥
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
